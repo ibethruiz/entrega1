@@ -11,7 +11,7 @@ votos = np.random.randint(1, 31, num_estu)
 list_votos= [0] * num_candts
 
 for voto in votos:
-    list_votos[voto] += 1
+    list_votos[voto-1] += 1
 
 #ordenamiento (Método de burbuja)
 for i in range(num_candts - 1):  
